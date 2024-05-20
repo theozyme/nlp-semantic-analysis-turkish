@@ -48,6 +48,14 @@ class model_SVM():
         print("Duyarlılık:", recall)
         print("F1 Skoru:", f1)
 
+        # Model detaylarını görüntüleyebiliriz
+        print("SVM Model Detayları:")
+        print(svm_model)
+        
+        # Model Hiperparametrelerini görüntüleyebilirz
+        print("\nSVM Model Hiperparametreleri:")
+        print(svm_model.get_params())
+        
         # Eğitilen model dosyaya kaydedilir
         dump(svm_model, 'svm_model.joblib')
 
